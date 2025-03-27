@@ -1,0 +1,8 @@
+<script>
+
+    const check = parseFloat(prompt(`Счет на всех составляет`));
+    const tips = check * (parseFloat(prompt(`Процент чаевых (указать целое число)`)) / 100);
+    const people = parseInt(prompt(`Сколько человек оплачивает счет`));
+
+    alert(`Счет на человека составляет: ${(check + tips) / people} рублей`);
+</script>
