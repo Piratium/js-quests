@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!--Сумма счета, процент чаевых, кол-во человек, кнопка "расчитатьБ результат"-->
+            <div class="header">Калькулятор чаевых</div>
+            <div class="main">
+                <input id="check" class="textbar" inputmode="numeric" type="number" placeholder="Сумма счета в рублях">
+                <input id="tips" class="textbar" inputmode="numeric" type="number" placeholder="Процент чаевых">
+                <input id="people" class="textbar" inputmode="numeric" type="number" placeholder="Кол-во человек">
+                <button class="calculate-btn">Рассчитать</button>
+                
+            </div>
+            <ul class="output invis">
+                <li class="output-item">
+                    <p>Чаевые:</p>
+                    <p id="tips-output">asd</p>
+                </li>
+                <li class="line"></li>
+                <li class="output-item">
+                    <p>Счет на человека:</p>
+                    <p id="check-per-person">asd</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

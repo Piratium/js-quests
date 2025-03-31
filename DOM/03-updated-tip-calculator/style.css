@@ -1,0 +1,90 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(180deg, rgb(83, 202, 176), rgb(8, 149, 171));
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    background-color: rgb(204, 255, 236);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 204, 109);
+    color: rgb(190, 255, 217);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.textbar {
+    display: block;
+    background-color: rgb(193, 225, 233);
+    padding: 8px 30px;
+    border-radius: 17px;
+    width: auto;
+    margin-bottom: 11px;
+    min-width: 320px;
+}
+
+.calculate-btn {
+    display: block;
+    margin: 20px 0 0;
+    background-color: rgb(0, 204, 109);
+    color: rgb(190, 255, 217);
+    text-align: center;
+    border-radius: 17px;
+    padding: 8px;
+    min-width: 320px;
+}
+
+.output {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 0 30px;
+    max-height: 100px;
+    transition: max-height 2s ease, opacity 2s ease;
+    overflow: hidden;
+}
+
+.output .output-item {
+    flex-basis: 100%;
+}
+
+.line {
+    flex-basis: 5px;
+    border-radius: 50%;
+    background-color: rgb(0, 230, 134);
+}
+
+.invis {
+    opacity: 0;
+    max-height: 0px;
+}
+
